@@ -1,0 +1,74 @@
+﻿@page "/login"
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<h3>Login</h3>
+
+<div class="row mt-5">
+    <div class="col-lg-4 offset-lg-4 border">
+        <div class="mb-3 text-center">
+            <h3>LOGIN</h3>
+        </div>
+
+        <form onsubmit="IniciarSesion">
+            <div class="mb-3">
+                <label>Usuario</label>
+                <input id="usuario" @bind="login.usuario" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label>Clave</label>
+                <input id="clave" type="password" @bind="login.clave" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@code {
+    private LoginModel login = new LoginModel();
+    private EditContext editContext;
+
+    protected override void OnInitialized()
+    {
+        editContext = new EditContext(login);
+    }
+
+  
+
+    private async Task IniciarSesion()
+    {
+        Navigation.NavigateTo("/Index");
+        // var response = await Http.PostAsJsonAsync("https://localhost:7111/api/Login/Login", loginModel);
+        // if (response.IsSuccessStatusCode)
+        // {
+        //     var user = await response.Content.ReadFromJsonAsync<Usuarios>();
+        //     // Handle successful login, for example, store user information
+        //     // Navigate to another page
+        //     Navigation.NavigateTo("/Index");
+        // }
+        // else
+        // {
+        //     // Handle login failure
+        //     // Optionally show an error message to the user
+        //     Console.WriteLine("Login failed");
+        // }
+    }
+
+    public class LoginModel
+    {
+        public string usuario { get; set; }
+        public string clave { get; set; }
+    }
+
+    public class Usuarios
+    {
+        public int Id { get; set; }
+        public string usuario { get; set; }
+        public string clave { get; set; }
+        public string nombre { get; set; }
+    }
+}

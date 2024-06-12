@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "q+qgOcwzoYU=",
+  "dgSpecHash": "KZ5wl8kfU00=",
   "success": true,
   "projectFilePath": "C:\\repos\\BOLIVAR_MENDOZA\\back\\back.csproj",
   "expectedPackageFiles": [
@@ -77,6 +77,7 @@
     "C:\\Users\\Mauro\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.31\\microsoft.entityframeworkcore.6.0.31.nupkg.sha512",
     "C:\\Users\\Mauro\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.31\\microsoft.entityframeworkcore.abstractions.6.0.31.nupkg.sha512",
     "C:\\Users\\Mauro\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.31\\microsoft.entityframeworkcore.analyzers.6.0.31.nupkg.sha512",
+    "C:\\Users\\Mauro\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.31\\microsoft.entityframeworkcore.design.6.0.31.nupkg.sha512",
     "C:\\Users\\Mauro\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.31\\microsoft.entityframeworkcore.relational.6.0.31.nupkg.sha512",
     "C:\\Users\\Mauro\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.31\\microsoft.entityframeworkcore.sqlserver.6.0.31.nupkg.sha512",
     "C:\\Users\\Mauro\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

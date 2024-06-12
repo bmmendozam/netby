@@ -9,6 +9,7 @@
       "back/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.31",
+          "Microsoft.EntityFrameworkCore.Design": "6.0.31",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.31",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2",
           "Swashbuckle.AspNetCore": "6.4.0"
@@ -1128,6 +1129,18 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.31": {},
+      "Microsoft.EntityFrameworkCore.Design/6.0.31": {
+        "dependencies": {
+          "Humanizer.Core": "2.14.1",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.31"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "6.0.31.0",
+            "fileVersion": "6.0.3124.26901"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.31": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.31",
@@ -2309,6 +2322,13 @@
       "sha512": "sha512-1v9d0P316ZrESIyijs724db34T9LDnA8ug8MwnvsIohd8y+xIXpkLsG9oDzH0MAitLGkTF9Jaas3EKx0lOyMJg==",
       "path": "microsoft.entityframeworkcore.analyzers/6.0.31",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.31.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Design/6.0.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Up+uCFCYxcVsXmwW227jh1JCbxEhQPJgpWT7J91H/ofcN+ONB7j1C2A+SMOqCxoabWWh88JLKyMOFKhcudwsZA==",
+      "path": "microsoft.entityframeworkcore.design/6.0.31",
+      "hashPath": "microsoft.entityframeworkcore.design.6.0.31.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/6.0.31": {
       "type": "package",
