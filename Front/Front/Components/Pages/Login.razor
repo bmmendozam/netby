@@ -10,7 +10,7 @@
             <h3>LOGIN</h3>
         </div>
 
-        <form onsubmit="IniciarSesion">
+        <form onsubmit="HandleSubmit">
             <div class="mb-3">
                 <label>Usuario</label>
                 <input id="usuario" @bind="login.usuario" class="form-control" />
@@ -39,9 +39,10 @@
 
   
 
-    private async Task IniciarSesion()
+    private async Task HandleSubmit()
     {
         Navigation.NavigateTo("/Index");
+         
         // var response = await Http.PostAsJsonAsync("https://localhost:7111/api/Login/Login", loginModel);
         // if (response.IsSuccessStatusCode)
         // {
